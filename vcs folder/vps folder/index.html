@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>BMI Caculator</title>
+</head>
+<body>
+   <h1>calculate your body  mass</h1>
+
+   <input type="text" placeholder="mass(Kg)" id="inputmass"/>
+  
+   <br>
+
+   <input type="text" placeholder="height(cm)" id="inputheight"/>
+  
+   <br>
+  
+   <button onclick ="calculateBMI(20)">calculateBMI</button>
+   <script src="index.js"></script>
+
+   <script>
+       function calculateBMI()   {
+
+       var mass;
+       var height;
+
+
+       mass = document.getElementById("inputmass").value;
+       height = document.getElementById("inputheight").value;
+
+       var bmi = mass / ((height / 100)  * (height / 100));
+       alert(bmi);
+
+       if (bmi<18) {
+           bmiresult = "less than ideal"
+        } else if (bmi > 25) {
+            bmiresult = "more than ideal"
+        } else {
+            bmiresult = "ideal"
+        }
+
+        alert(bmiresult);
+
+
+       //TUTORIAL
+    
+        alert("ini javascript!");
+              
+        console.log("ini console log !");
+
+        //dekalarasi variabel
+        var LuasTanah;
+
+        //isi nilai variabel
+        LuasTanah = 300
+
+        var PanjangTanah = 100;
+
+        var LebarTanah = LuasTanah / PanjangTanah;
+        alert(LebarTanah);
+
+        alert("selamat" + "tahun baru");
+        alert(100 + 990);
+        alert("selamat tahun baru" + 2020);
+
+       }
+ 
+  
+   </script>
+
+
+
+</body>
+</html>
+
