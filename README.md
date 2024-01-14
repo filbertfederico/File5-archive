@@ -1,3 +1,5 @@
 # File5-archive
 
-nlp: https://github.com/Pandalmation/GenshinDeepLearning
+nlp project: https://github.com/Pandalmation/GenshinDeepLearning
+
+data science: https://ieeexplore.ieee.org/document/10291660
